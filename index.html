@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habrman Ventures AB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Habrman Ventures AB</h1>
+      <div class="divider"></div>
+    </div>
+    <div class="scroll-hint">
+      <span class="arrow">↓</span>
+    </div>
+  </section>
+
+  <section class="contact">
+    <a href="mailto:habrman.ventures@gmail.com" class="email">habrman.ventures@gmail.com</a>
+  </section>
+
+  <section class="game-section">
+    <p class="game-prompt">Find the secret in the forest…</p>
+    <div class="game-container hidden" id="gameContainer">
+      <canvas id="gameCanvas"></canvas>
+      <div class="game-ui">
+        <span id="score">0</span>
+        <button id="restartBtn" class="hidden">↻</button>
+      </div>
+      <p class="controls">SPACE or TAP to jump</p>
+    </div>
+  </section>
+
+  <script src="game.js"></script>
+</body>
+</html>
