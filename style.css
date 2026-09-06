@@ -121,7 +121,8 @@ body {
   position: relative;
   margin-top: 1.5rem;
   border: 1px solid var(--bg-mid);
-  image-rendering: pixelated;
+  width: 90vw;
+  max-width: 600px;
 }
 
 .game-container.hidden {
@@ -130,6 +131,7 @@ body {
 
 #gameCanvas {
   display: block;
+  width: 100%;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   background: var(--bg-deep);

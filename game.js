@@ -1,5 +1,4 @@
 (function () {
-  const PIXEL = 3;
   const W = 200;
   const H = 120;
   const GRAVITY = 0.45;
@@ -11,8 +10,6 @@
   const ctx = canvas.getContext('2d');
   canvas.width = W;
   canvas.height = H;
-  canvas.style.width = W * PIXEL + 'px';
-  canvas.style.height = H * PIXEL + 'px';
 
   const prompt = document.querySelector('.game-prompt');
   const container = document.getElementById('gameContainer');
