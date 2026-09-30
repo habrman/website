@@ -13,7 +13,7 @@
   --amber: #d4a754;
   --amber-dim: #a07830;
   --text: #d0d0c0;
-  --text-dim: #707060;
+  --text-dim: #8a8a78;
 }
 
 html {
@@ -37,20 +37,52 @@ body {
       var(--bg-deep) 100%
     );
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: 100% 100vh;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.25rem;
+  padding: 0.9rem 1rem;
+  background: rgba(10, 15, 10, 0.94);
+  border-bottom: 1px solid rgba(212, 167, 84, 0.18);
+}
+
+.nav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.nav a:hover,
+.block a:hover,
+footer a:hover {
+  color: var(--amber);
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 5rem 1.5rem 4rem;
 }
 
 .hero-content {
   text-align: center;
+  max-width: 36rem;
 }
 
 .hero h1 {
@@ -68,9 +100,17 @@ body {
   margin: 1.5rem auto 0;
 }
 
+.lede {
+  margin-top: 1.35rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
 .scroll-hint {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2.2rem;
   animation: pulse 2s ease-in-out infinite;
 }
 
@@ -85,33 +125,116 @@ body {
   50% { opacity: 1; transform: translateY(6px); }
 }
 
-.email {
-  color: var(--text-dim);
-  text-decoration: none;
-  font-size: 0.7rem;
-  letter-spacing: 0.06em;
-  opacity: 0.55;
-  transition: color 0.3s ease, opacity 0.3s ease;
+.block {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 0;
+  scroll-margin-top: 4.5rem;
 }
 
-.email:hover {
+#about,
+#bragi {
+  text-align: center;
+}
+
+.block h2 {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.block h3 {
+  margin-top: 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.block p {
+  margin-top: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.block a,
+footer a {
   color: var(--amber-dim);
-  opacity: 0.85;
+}
+
+.meta {
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+
+.contact-email {
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+}
+
+.page {
+  padding-top: 4.5rem;
+}
+
+.page .block:first-child {
+  padding-top: 1.5rem;
+}
+
+.logo-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+.logo-link img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 20px;
+}
+
+.block a.site-link {
+  display: inline-flex;
+  margin-top: 1.35rem;
+  padding: 0.55rem 1.05rem;
+  border: 1px solid var(--amber-dim);
+  border-radius: 999px;
+  color: var(--amber);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+}
+
+.block a.site-link:hover {
+  border-color: var(--amber);
+  color: var(--text);
 }
 
 .game-section {
-  min-height: 40vh;
+  min-height: 28vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1rem;
+  padding: 4.5rem 1rem 2rem;
+}
+
+.game-launch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem 1rem;
+}
+
+.game-launch.hidden {
+  display: none;
 }
 
 .game-prompt {
   font-size: 0.75rem;
   color: var(--text-dim);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   cursor: pointer;
   transition: color 0.3s ease;
   user-select: none;
@@ -119,6 +242,24 @@ body {
 
 .game-prompt:hover {
   color: var(--green-light);
+}
+
+.play-btn {
+  font-family: inherit;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+  background: transparent;
+  border: 1px solid var(--amber-dim);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  border-color: var(--amber);
+  color: var(--text);
 }
 
 .game-container {
@@ -180,6 +321,24 @@ body {
 }
 
 footer {
+  scroll-margin-top: 4.5rem;
   text-align: center;
-  padding: 2rem 1rem 2.5rem;
+  padding: 4.5rem 1.5rem 2.75rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.7;
 }
+
+footer h2 {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+footer p {
+  margin-top: 0.85rem;
+}
+

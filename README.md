@@ -8,7 +8,7 @@ Corporate website for Habrman Ventures AB.
 
 ## Contact
 
-habrman.ventures@gmail.com
+info@habrman.se
 
 ## Local Development
 

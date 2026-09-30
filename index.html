@@ -4,33 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Habrman Ventures AB</title>
+  <meta name="description" content="Habrman Ventures AB is a Swedish limited company that manages its own capital and publishes Bragi.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#bragi">Bragi</a>
+    <a href="legal.html#terms">Terms</a>
+    <a href="legal.html#privacy">Privacy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <section class="hero">
     <div class="hero-content">
       <h1>Habrman Ventures AB</h1>
       <div class="divider"></div>
+      <p class="lede">A Swedish company that manages its own capital and publishes Bragi.</p>
     </div>
     <div class="scroll-hint">
       <span class="arrow">↓</span>
     </div>
   </section>
 
-  <section class="game-section">
-    <p class="game-prompt">Find the secret in the forest…</p>
-    <div class="game-container hidden" id="gameContainer">
-      <canvas id="gameCanvas"></canvas>
-      <div class="game-ui">
-        <span id="score">0</span>
-        <button id="restartBtn" class="hidden">↻</button>
-      </div>
-      <p class="controls">SPACE or TAP to jump</p>
-    </div>
-  </section>
+  <main>
+    <section class="block" id="about">
+      <h2>About</h2>
+      <p>
+        Habrman Ventures AB is a Swedish limited company seated in Linköping.
+        The company manages its own capital and shares.
+        It also publishes Bragi, a story app.
+      </p>
+    </section>
 
-  <footer>
-    <a href="mailto:habrman.ventures@gmail.com" class="email">habrman.ventures@gmail.com</a>
+    <section class="block" id="bragi">
+      <h2>Bragi</h2>
+      <a class="logo-link" href="https://gobragi.com/">
+        <img src="images/bragi.png" alt="Bragi" width="256" height="256">
+      </a>
+      <p>
+        Parents use Bragi to create personalised stories for their children.
+        Habrman Ventures AB publishes the app.
+      </p>
+      <a class="site-link" href="https://gobragi.com/">gobragi.com</a>
+    </section>
+
+    <section class="game-section">
+      <div class="game-launch" id="gameLaunch">
+        <p class="game-prompt">Find the secret in the forest…</p>
+        <button type="button" class="play-btn" id="playBtn">Play</button>
+      </div>
+      <div class="game-container hidden" id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-ui">
+          <span id="score">0</span>
+          <button id="restartBtn" class="hidden">↻</button>
+        </div>
+        <p class="controls">SPACE or TAP to jump</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Habrman Ventures AB</p>
+    <p><a class="contact-email" href="mailto:info@habrman.se">info@habrman.se</a></p>
   </footer>
 
   <script src="game.js"></script>

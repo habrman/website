@@ -12,6 +12,8 @@
   canvas.height = H;
 
   const prompt = document.querySelector('.game-prompt');
+  const launch = document.getElementById('gameLaunch');
+  const playBtn = document.getElementById('playBtn');
   const container = document.getElementById('gameContainer');
   const scoreEl = document.getElementById('score');
   const restartBtn = document.getElementById('restartBtn');
@@ -97,7 +99,7 @@
     if (gameOver) return;
     if (!running) {
       running = true;
-      prompt.style.display = 'none';
+      launch.classList.add('hidden');
       container.classList.remove('hidden');
       init();
       requestAnimationFrame(loop);
@@ -273,7 +275,9 @@
   }
 
   prompt.addEventListener('click', jump);
+  playBtn.addEventListener('click', jump);
   document.addEventListener('keydown', function (e) {
+    if (!running) return;
     if (e.code === 'Space' || e.key === ' ') {
       e.preventDefault();
       jump();
