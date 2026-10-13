@@ -5,74 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Habrman Ventures AB</title>
   <meta name="description" content="Habrman Ventures AB is a Swedish limited company that manages its own capital and publishes Bragi, Drills, and Giftmas.">
+  <meta name="theme-color" content="#0a0f0a">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <nav class="nav">
-    <a href="#about">About</a>
-    <a href="#bragi">Bragi</a>
-    <a href="#drills">Drills</a>
-    <a href="#giftmas">Giftmas</a>
-    <a href="legal.html#terms">Terms</a>
-    <a href="legal.html#privacy">Privacy</a>
-    <a href="#contact">Contact</a>
+    <a class="brand" href="#top" aria-label="Habrman Ventures AB, back to top">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-name">Habrman Ventures</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#apps">Apps</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <section class="hero">
+  <header class="hero" id="top">
+    <div class="sky" aria-hidden="true"></div>
+    <svg class="forest" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <path class="forest-back" d="M0 360 L0 250 L1440 250 L1440 360ZM-46 254 -32 225 -41 225 -30 198 -37 198 -26 158 -26 158 -14 198 -21 198 -10 225 -19 225 -5 254ZM-24 250 -8 216 -18 216 -6 185 -13 185 -0 137 -0 137 13 185 6 185 18 216 8 216 24 250ZM18 250 29 229 22 229 30 208 25 208 34 177 34 177 42 208 37 208 45 229 38 229 49 250ZM41 251 55 220 46 220 57 190 50 190 62 147 62 147 75 190 68 190 79 220 69 220 84 251ZM65 253 82 217 71 217 84 184 76 184 90 133 90 133 104 184 96 184 109 217 98 217 115 253ZM74 255 96 211 82 211 98 169 88 169 105 107 105 107 123 169 113 169 129 211 115 211 137 255ZM117 252 128 227 121 227 130 205 124 205 134 170 134 170 143 205 138 205 147 227 139 227 151 252ZM163 254 175 228 168 228 177 205 171 205 181 169 181 169 191 205 185 205 195 228 187 228 199 254ZM178 250 194 216 184 216 196 184 189 184 202 137 202 137 215 184 208 184 220 216 210 216 226 250ZM207 252 225 215 213 215 227 180 219 180 233 127 233 127 248 180 240 180 253 215 242 215 259 252ZM243 255 258 223 249 223 260 193 253 193 266 149 266 149 278 193 271 193 282 223 273 223 288 255ZM288 253 301 226 293 226 302 201 296 201 307 164 307 164 317 201 311 201 321 226 313 226 326 253ZM317 256 335 217 323 217 337 181 329 181 344 128 344 128 359 181 350 181 364 217 352 217 371 256ZM353 251 367 220 358 220 369 191 362 191 374 147 374 147 386 191 380 191 391 220 381 220 396 251ZM390 255 400 233 393 233 401 212 396 212 405 181 405 181 414 212 409 212 417 233 410 233 420 255ZM404 254 424 212 411 212 426 173 417 173 433 114 433 114 450 173 440 173 456 212 443 212 463 254ZM446 255 462 220 452 220 464 188 456 188 470 139 470 139 484 188 476 188 489 220 478 220 495 255ZM494 250 509 218 499 218 511 188 504 188 516 142 516 142 529 188 522 188 534 218 524 218 539 250ZM533 255 551 218 539 218 553 184 544 184 559 133 559 133 573 184 565 184 578 218 567 218 584 255ZM559 250 574 220 565 220 576 192 569 192 581 149 581 149 593 192 586 192 597 220 587 220 602 250ZM586 250 598 225 590 225 599 202 593 202 603 167 603 167 613 202 607 202 617 225 609 225 621 250ZM627 252 639 228 631 228 640 206 635 206 644 172 644 172 653 206 648 206 657 228 649 228 661 252ZM672 253 683 230 676 230 685 209 679 209 688 177 688 177 697 209 692 209 701 230 694 230 704 253ZM708 252 727 211 715 211 730 173 721 173 736 116 736 116 752 173 743 173 758 211 746 211 765 252ZM746 256 760 226 751 226 762 198 755 198 767 157 767 157 779 198 772 198 783 226 774 226 788 256ZM763 251 775 226 767 226 776 203 771 203 781 167 781 167 790 203 785 203 794 226 786 226 798 251ZM788 250 805 215 794 215 807 182 799 182 813 133 813 133 827 182 819 182 832 215 821 215 838 250ZM827 256 842 226 832 226 843 198 837 198 848 156 848 156 860 198 853 198 864 226 855 226 869 256ZM863 254 878 221 868 221 880 190 873 190 886 143 886 143 899 190 892 190 904 221 893 221 909 254ZM880 255 901 213 888 213 903 173 894 173 910 113 910 113 927 173 917 173 933 213 920 213 940 255ZM922 251 937 220 927 220 938 192 932 192 943 149 943 149 955 192 949 192 960 220 950 220 965 251ZM958 251 969 229 962 229 970 208 965 208 974 176 974 176 983 208 977 208 986 229 979 229 989 251ZM977 250 991 221 982 221 993 194 986 194 998 153 998 153 1009 194 1003 194 1013 221 1004 221 1018 250ZM1010 250 1021 227 1014 227 1023 205 1018 205 1027 172 1027 172 1036 205 1031 205 1039 227 1032 227 1043 250ZM1039 252 1056 216 1045 216 1058 182 1050 182 1064 132 1064 132 1078 182 1070 182 1083 216 1072 216 1089 252ZM1072 255 1086 225 1077 225 1088 198 1081 198 1093 156 1093 156 1104 198 1098 198 1109 225 1099 225 1114 255ZM1120 251 1135 218 1125 218 1137 188 1130 188 1143 143 1143 143 1155 188 1148 188 1160 218 1150 218 1165 251ZM1141 255 1155 226 1146 226 1157 198 1150 198 1162 158 1162 158 1173 198 1167 198 1177 226 1168 226 1182 255ZM1182 253 1192 232 1186 232 1193 211 1189 211 1197 181 1197 181 1206 211 1201 211 1209 232 1202 232 1212 253ZM1182 253 1199 219 1188 219 1200 187 1193 187 1206 140 1206 140 1220 187 1212 187 1224 219 1214 219 1230 253ZM1231 252 1251 210 1238 210 1254 171 1244 171 1261 113 1261 113 1277 171 1268 171 1283 210 1270 210 1290 252ZM1273 253 1285 228 1278 228 1287 205 1281 205 1291 170 1291 170 1301 205 1295 205 1304 228 1297 228 1308 253ZM1301 255 1315 226 1306 226 1316 199 1310 199 1321 158 1321 158 1332 199 1326 199 1336 226 1328 226 1341 255ZM1345 255 1365 213 1352 213 1367 175 1358 175 1374 117 1374 117 1390 175 1381 175 1396 213 1384 213 1403 255ZM1389 252 1402 226 1394 226 1403 201 1397 201 1408 164 1408 164 1418 201 1412 201 1422 226 1414 226 1426 252ZM1410 252 1420 230 1413 230 1421 210 1416 210 1425 179 1425 179 1433 210 1429 210 1436 230 1430 230 1440 252ZM1434 256 1455 212 1441 212 1457 171 1447 171 1464 109 1464 109 1482 171 1472 171 1488 212 1474 212 1495 256Z"/>
+      <path class="forest-mid" d="M0 360 L0 290 L1440 290 L1440 360ZM-60 291 -35 236 -51 236 -32 184 -43 184 -23 106 -23 106 -2 184 -14 184 5 236 -11 236 14 291ZM-13 294 2 261 -8 261 4 230 -3 230 9 184 9 184 21 230 14 230 26 261 16 261 31 294ZM36 294 60 242 45 242 63 193 52 193 71 120 71 120 91 193 79 193 98 242 82 242 106 294ZM108 295 122 266 113 266 123 238 117 238 128 197 128 197 139 238 133 238 143 266 134 266 148 295ZM144 291 167 242 152 242 169 195 159 195 177 126 177 126 196 195 185 195 202 242 188 242 210 291ZM212 296 229 259 218 259 231 224 223 224 237 173 237 173 250 224 243 224 255 259 245 259 261 296ZM254 294 272 255 260 255 274 219 265 219 280 164 280 164 295 219 286 219 300 255 288 255 306 294ZM277 295 291 265 281 265 292 236 286 236 297 193 297 193 309 236 302 236 313 265 304 265 318 295ZM343 296 357 264 348 264 359 235 352 235 364 191 364 191 376 235 369 235 380 264 371 264 385 296ZM382 291 399 253 388 253 401 218 393 218 407 166 407 166 421 218 413 218 426 253 415 253 432 291ZM400 293 425 237 409 237 428 185 416 185 437 106 437 106 458 185 446 185 466 237 449 237 475 293ZM473 295 491 255 479 255 493 218 485 218 500 162 500 162 514 218 506 218 520 255 508 255 526 295ZM499 291 515 257 505 257 517 225 509 225 522 176 522 176 535 225 528 225 540 257 530 257 545 291ZM548 291 564 256 554 256 566 224 558 224 571 175 571 175 584 224 577 224 589 256 579 256 595 291ZM604 294 621 256 610 256 623 221 615 221 629 168 629 168 643 221 635 221 648 256 637 256 654 294ZM669 293 687 253 675 253 689 216 680 216 695 161 695 161 710 216 701 216 715 253 703 253 721 293ZM693 293 713 250 700 250 715 210 706 210 722 150 722 150 738 210 729 210 743 250 731 250 750 293ZM753 291 765 264 757 264 766 239 761 239 771 201 771 201 781 239 775 239 785 264 777 264 789 291ZM776 292 798 243 784 243 801 198 791 198 809 129 809 129 827 198 817 198 834 243 819 243 841 292ZM829 291 848 247 836 247 851 206 841 206 858 145 858 145 874 206 865 206 880 247 867 247 887 291ZM870 295 886 260 876 260 888 228 880 228 893 180 893 180 906 228 899 228 911 260 901 260 916 295ZM918 295 937 252 925 252 940 211 930 211 947 149 947 149 963 211 954 211 969 252 956 252 976 295ZM953 293 974 248 961 248 976 205 967 205 984 142 984 142 1000 205 991 205 1007 248 993 248 1014 293ZM1007 293 1025 252 1013 252 1028 214 1019 214 1034 158 1034 158 1049 214 1041 214 1055 252 1043 252 1061 293ZM1067 296 1089 248 1074 248 1091 203 1081 203 1099 136 1099 136 1117 203 1106 203 1123 248 1109 248 1131 296ZM1107 295 1127 251 1114 251 1129 210 1120 210 1136 149 1136 149 1152 210 1143 210 1158 251 1145 251 1165 295ZM1138 290 1152 260 1143 260 1153 231 1147 231 1158 188 1158 188 1170 231 1163 231 1174 260 1165 260 1179 290ZM1179 295 1192 266 1183 266 1193 238 1187 238 1198 197 1198 197 1209 238 1203 238 1213 266 1204 266 1217 295ZM1234 294 1249 262 1239 262 1250 233 1244 233 1255 189 1255 189 1267 233 1260 233 1271 262 1262 262 1276 294ZM1257 291 1281 238 1266 238 1284 188 1273 188 1293 113 1293 113 1313 188 1301 188 1320 238 1304 238 1328 291ZM1315 296 1333 257 1322 257 1335 221 1327 221 1341 166 1341 166 1356 221 1348 221 1361 257 1350 257 1367 296ZM1373 293 1388 261 1378 261 1389 232 1383 232 1395 187 1395 187 1406 232 1400 232 1411 261 1401 261 1416 293ZM1409 294 1424 261 1414 261 1426 231 1419 231 1431 185 1431 185 1443 231 1436 231 1447 261 1438 261 1453 294ZM1432 290 1452 246 1439 246 1455 206 1445 206 1462 145 1462 145 1478 206 1468 206 1484 246 1471 246 1491 290Z"/>
+      <path class="forest-front" d="M0 360 L0 330 L1440 330 L1440 360ZM-56 330 -31 273 -47 273 -28 220 -40 220 -20 139 -20 139 1 220 -11 220 8 273 -8 273 17 330ZM35 331 63 267 45 267 66 207 53 207 76 118 76 118 98 207 85 207 106 267 89 267 116 331ZM99 332 114 297 104 297 115 265 108 265 121 216 121 216 133 265 126 265 137 297 128 297 143 332ZM137 335 159 285 145 285 161 239 151 239 169 170 169 170 186 239 176 239 192 285 179 285 200 335ZM194 333 211 295 200 295 213 258 205 258 219 204 219 204 233 258 225 258 237 295 227 295 243 333ZM241 334 257 298 247 298 259 264 251 264 264 212 264 212 277 264 270 264 282 298 272 298 288 334ZM324 334 339 298 329 298 341 265 334 265 347 214 347 214 359 265 352 265 364 298 354 298 369 334ZM396 330 411 294 401 294 413 260 406 260 419 210 419 210 431 260 424 260 436 294 426 294 442 330ZM449 333 471 283 457 283 473 235 463 235 481 164 481 164 499 235 489 235 506 283 491 283 513 333ZM528 333 546 290 534 290 549 249 540 249 555 188 555 188 571 249 562 249 576 290 564 290 583 333ZM582 330 598 293 587 293 599 258 592 258 605 206 605 206 618 258 611 258 623 293 613 293 629 330ZM628 335 647 289 635 289 650 247 641 247 657 184 657 184 673 247 663 247 678 289 666 289 685 335ZM671 332 694 280 679 280 696 231 686 231 704 157 704 157 723 231 712 231 730 280 715 280 738 332ZM712 334 730 292 719 292 733 252 724 252 739 192 739 192 754 252 746 252 760 292 748 292 766 334ZM789 336 807 295 796 295 809 258 801 258 815 201 815 201 829 258 821 258 834 295 823 295 841 336ZM816 333 844 268 826 268 847 207 834 207 857 117 857 117 880 207 867 207 888 268 870 268 898 333ZM904 334 925 286 912 286 928 241 918 241 935 173 935 173 952 241 942 241 958 286 945 286 965 334ZM997 334 1017 288 1004 288 1019 245 1010 245 1026 180 1026 180 1043 245 1033 245 1049 288 1036 288 1056 334ZM1049 330 1070 282 1056 282 1072 236 1062 236 1080 168 1080 168 1097 236 1087 236 1103 282 1090 282 1111 330ZM1112 332 1128 296 1118 296 1130 262 1122 262 1135 212 1135 212 1148 262 1140 262 1152 296 1142 296 1158 332ZM1160 335 1176 299 1166 299 1178 265 1171 265 1183 214 1183 214 1196 265 1189 265 1201 299 1191 299 1206 335ZM1207 332 1226 288 1214 288 1228 247 1220 247 1235 185 1235 185 1251 247 1242 247 1256 288 1244 288 1263 332ZM1275 332 1292 292 1281 292 1294 256 1286 256 1300 201 1300 201 1314 256 1306 256 1319 292 1308 292 1325 332ZM1339 331 1370 261 1350 261 1373 194 1359 194 1384 95 1384 95 1409 194 1395 194 1418 261 1399 261 1429 331ZM1432 330 1451 285 1439 285 1454 243 1445 243 1460 180 1460 180 1476 243 1467 243 1482 285 1470 285 1489 330Z"/>
+    </svg>
+    <svg class="stars" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><circle class="twinkle" cx="343" cy="283" r="0.8" opacity="0.85"/><circle cx="683" cy="302" r="1.2" opacity="0.26"/><circle cx="1206" cy="135" r="0.8" opacity="0.37"/><circle cx="1033" cy="281" r="1.2" opacity="0.56"/><circle cx="920" cy="78" r="1.6" opacity="0.35"/><circle cx="1333" cy="203" r="0.6" opacity="0.69"/><circle class="twinkle" cx="92" cy="394" r="1.2" opacity="0.28"/><circle cx="1123" cy="428" r="0.8" opacity="0.56"/><circle cx="1035" cy="457" r="1.6" opacity="0.76"/><circle cx="615" cy="379" r="1.2" opacity="0.54"/><circle cx="1347" cy="457" r="0.6" opacity="0.27"/><circle cx="713" cy="134" r="1.6" opacity="0.53"/><circle class="twinkle" cx="902" cy="157" r="1.2" opacity="0.79"/><circle cx="827" cy="278" r="1" opacity="0.63"/><circle cx="1302" cy="355" r="0.6" opacity="0.81"/><circle cx="1427" cy="349" r="0.8" opacity="0.70"/><circle cx="470" cy="282" r="1.2" opacity="0.62"/><circle cx="1028" cy="110" r="1.2" opacity="0.42"/><circle class="twinkle" cx="179" cy="251" r="1.6" opacity="0.89"/><circle cx="127" cy="416" r="1" opacity="0.83"/><circle cx="29" cy="222" r="1" opacity="0.82"/><circle cx="64" cy="320" r="0.6" opacity="0.50"/><circle cx="844" cy="286" r="0.8" opacity="0.58"/><circle cx="1438" cy="161" r="0.6" opacity="0.32"/><circle class="twinkle" cx="771" cy="493" r="1" opacity="0.44"/><circle cx="379" cy="359" r="0.8" opacity="0.45"/><circle cx="1380" cy="466" r="1" opacity="0.49"/><circle cx="1253" cy="201" r="1.2" opacity="0.69"/><circle cx="148" cy="506" r="1.2" opacity="0.43"/><circle cx="913" cy="372" r="0.8" opacity="0.53"/><circle class="twinkle" cx="372" cy="158" r="0.8" opacity="0.26"/><circle cx="598" cy="302" r="0.6" opacity="0.49"/><circle cx="848" cy="69" r="1.6" opacity="0.66"/><circle cx="671" cy="353" r="0.8" opacity="0.65"/><circle cx="402" cy="255" r="1.2" opacity="0.29"/><circle cx="973" cy="501" r="0.8" opacity="0.66"/><circle class="twinkle" cx="430" cy="313" r="0.8" opacity="0.49"/><circle cx="450" cy="192" r="1.2" opacity="0.42"/><circle cx="1134" cy="55" r="0.6" opacity="0.88"/><circle cx="985" cy="68" r="1.2" opacity="0.39"/><circle cx="1157" cy="124" r="0.8" opacity="0.69"/><circle cx="935" cy="50" r="1.2" opacity="0.46"/><circle class="twinkle" cx="481" cy="433" r="1" opacity="0.78"/><circle cx="1383" cy="42" r="1.6" opacity="0.67"/><circle cx="1274" cy="235" r="0.8" opacity="0.76"/><circle cx="49" cy="498" r="0.8" opacity="0.77"/><circle cx="1207" cy="95" r="0.8" opacity="0.47"/><circle cx="1192" cy="44" r="1.2" opacity="0.47"/><circle class="twinkle" cx="187" cy="152" r="0.8" opacity="0.55"/><circle cx="913" cy="151" r="1.2" opacity="0.52"/><circle cx="1326" cy="81" r="0.6" opacity="0.56"/><circle cx="1199" cy="324" r="1.2" opacity="0.53"/><circle cx="1368" cy="482" r="0.8" opacity="0.27"/><circle cx="658" cy="392" r="1.6" opacity="0.59"/><circle class="twinkle" cx="416" cy="177" r="0.8" opacity="0.81"/><circle cx="1235" cy="505" r="0.6" opacity="0.78"/><circle cx="65" cy="470" r="1.6" opacity="0.58"/><circle cx="286" cy="459" r="1" opacity="0.63"/><circle cx="19" cy="388" r="0.8" opacity="0.58"/><circle cx="344" cy="10" r="1.2" opacity="0.52"/><circle class="twinkle" cx="1352" cy="318" r="0.8" opacity="0.33"/><circle cx="1400" cy="281" r="0.6" opacity="0.48"/><circle cx="284" cy="278" r="0.6" opacity="0.36"/><circle cx="1140" cy="479" r="0.8" opacity="0.79"/><circle cx="11" cy="327" r="1" opacity="0.28"/><circle cx="391" cy="140" r="1.2" opacity="0.59"/><circle class="twinkle" cx="73" cy="168" r="0.6" opacity="0.81"/><circle cx="1116" cy="24" r="0.6" opacity="0.29"/><circle cx="1404" cy="444" r="0.6" opacity="0.59"/><circle cx="706" cy="82" r="0.6" opacity="0.48"/><circle cx="932" cy="305" r="0.8" opacity="0.42"/><circle cx="1423" cy="223" r="0.8" opacity="0.61"/><circle class="twinkle" cx="1031" cy="198" r="0.6" opacity="0.62"/><circle cx="62" cy="240" r="1.6" opacity="0.76"/><circle cx="548" cy="417" r="1.2" opacity="0.83"/><circle cx="76" cy="326" r="1.6" opacity="0.45"/><circle cx="1368" cy="218" r="0.6" opacity="0.41"/><circle cx="772" cy="361" r="0.6" opacity="0.77"/><circle class="twinkle" cx="323" cy="68" r="0.6" opacity="0.86"/><circle cx="539" cy="467" r="0.8" opacity="0.33"/><circle cx="994" cy="488" r="1.6" opacity="0.68"/><circle cx="1278" cy="412" r="1.6" opacity="0.32"/><circle cx="458" cy="277" r="1.2" opacity="0.72"/><circle cx="682" cy="123" r="1" opacity="0.28"/><circle class="twinkle" cx="132" cy="52" r="1" opacity="0.37"/><circle cx="34" cy="438" r="0.6" opacity="0.27"/><circle cx="166" cy="251" r="1.6" opacity="0.87"/><circle cx="834" cy="415" r="0.6" opacity="0.90"/><circle cx="812" cy="275" r="0.8" opacity="0.32"/><circle cx="1079" cy="486" r="0.6" opacity="0.61"/></svg>
+    <div class="fireflies" aria-hidden="true"></div>
     <div class="hero-content">
-      <h1>Habrman Ventures AB</h1>
-      <div class="divider"></div>
+      <p class="eyebrow">Linköping · Sweden</p>
+      <h1>Habrman Ventures <span>AB</span></h1>
       <p class="lede">A Swedish company that manages its own capital and publishes Bragi, Drills, and Giftmas.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#apps">See the apps</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
     </div>
-    <div class="scroll-hint">
-      <span class="arrow">↓</span>
-    </div>
-  </section>
+    <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+      <span></span>
+    </a>
+  </header>
 
   <main>
-    <section class="block" id="about">
-      <h2>About</h2>
-      <p>
-        Habrman Ventures AB is a Swedish limited company seated in Linköping.
-        The company manages its own capital and shares.
-        It also publishes Bragi, a story app, Drills, an ice hockey practice app, and Giftmas, a Secret Santa app.
-      </p>
+    <section class="section about reveal" id="about">
+      <div class="about-text">
+        <p class="eyebrow">About</p>
+        <h2>An independent company from Linköping.</h2>
+        <p>
+          Habrman Ventures AB is a Swedish limited company seated in Linköping.
+          The company manages its own capital and shares.
+          It also publishes Bragi, a story app, Drills, an ice hockey practice app, and Giftmas, a Secret Santa app.
+        </p>
+      </div>
+      <dl class="facts">
+        <div><dt>Seat</dt><dd>Linköping, Sweden</dd></div>
+        <div><dt>Company form</dt><dd>Aktiebolag (AB)</dd></div>
+        <div><dt>Apps published</dt><dd>3</dd></div>
+      </dl>
     </section>
 
-    <section class="block" id="bragi">
-      <h2>Bragi</h2>
-      <a class="logo-link" href="https://gobragi.com/">
-        <img src="images/bragi.png" alt="Bragi" width="256" height="256">
-      </a>
-      <p>
-        Parents use Bragi to create personalised stories for their children.
-      </p>
-      <a class="site-link" href="https://gobragi.com/">gobragi.com</a>
+    <section class="section apps" id="apps">
+      <div class="section-head reveal">
+        <p class="eyebrow">Apps</p>
+        <h2>What we publish</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal" id="bragi" style="--accent: #b58cff; --accent-2: #f2b46b;">
+          <div class="card-icon">
+            <img src="images/bragi.png" alt="" width="256" height="256">
+          </div>
+          <p class="card-tag">Stories</p>
+          <h3>Bragi</h3>
+          <p>Parents use Bragi to create personalised stories for their children.</p>
+          <a class="card-link" href="https://gobragi.com/">gobragi.com <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="card reveal" id="drills" style="--accent: #5a9be0; --accent-2: #e0525a;">
+          <div class="card-icon">
+            <img src="images/drills.svg" alt="" width="256" height="256">
+          </div>
+          <p class="card-tag">Ice hockey</p>
+          <h3>Drills</h3>
+          <p>Coaches use Drills to draw ice hockey drills and plan practices.</p>
+          <a class="card-link" href="https://drills.habrman.se/">drills.habrman.se <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="card reveal" id="giftmas" style="--accent: #e0525f; --accent-2: #e3b55b;">
+          <div class="card-icon">
+            <img src="images/giftmas.svg" alt="" width="256" height="256">
+          </div>
+          <p class="card-tag">Secret Santa</p>
+          <h3>Giftmas</h3>
+          <p>Families, friends, and offices use Giftmas to run a Secret Santa with wishlists and budgets.</p>
+          <a class="card-link" href="https://giftmas.habrman.se/">giftmas.habrman.se <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
     </section>
 
-    <section class="block" id="drills">
-      <h2>Drills</h2>
-      <a class="logo-link" href="https://drills.habrman.se/">
-        <img src="images/drills.svg" alt="Drills" width="256" height="256">
-      </a>
-      <p>
-        Coaches use Drills to draw ice hockey drills and plan practices.
-      </p>
-      <a class="site-link" href="https://drills.habrman.se/">drills.habrman.se</a>
-    </section>
-
-    <section class="block" id="giftmas">
-      <h2>Giftmas</h2>
-      <a class="logo-link" href="https://giftmas.habrman.se/">
-        <img src="images/giftmas.svg" alt="Giftmas" width="256" height="256">
-      </a>
-      <p>
-        Families, friends, and offices use Giftmas to run a Secret Santa with wishlists and budgets.
-      </p>
-      <a class="site-link" href="https://giftmas.habrman.se/">giftmas.habrman.se</a>
-    </section>
-
-    <section class="game-section">
+    <section class="game-section reveal">
       <div class="game-launch" id="gameLaunch">
         <p class="game-prompt">Find the secret in the forest…</p>
         <button type="button" class="play-btn" id="playBtn">Play</button>
@@ -81,19 +111,29 @@
         <canvas id="gameCanvas"></canvas>
         <div class="game-ui">
           <span id="score">0</span>
-          <button id="restartBtn" class="hidden">↻</button>
+          <button id="restartBtn" class="hidden" aria-label="Restart">↻</button>
         </div>
         <p class="controls">SPACE or TAP to jump</p>
       </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <h2>Contact</h2>
-    <p>Habrman Ventures AB</p>
-    <p><a class="contact-email" href="mailto:info@habrman.se">info@habrman.se</a></p>
+  <footer class="footer" id="contact">
+    <div class="contact reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Say hello.</h2>
+      <a class="contact-email" href="mailto:info@habrman.se">info@habrman.se</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© Habrman Ventures AB · Linköping, Sweden</p>
+      <p class="footer-links">
+        <a href="legal.html#terms">Terms</a>
+        <a href="legal.html#privacy">Privacy</a>
+      </p>
+    </div>
   </footer>
 
+  <script src="site.js"></script>
   <script src="game.js"></script>
 </body>
 </html>

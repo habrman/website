@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms and Privacy — Habrman Ventures AB</title>
   <meta name="description" content="Terms and conditions and privacy information for habrman.se.">
+  <meta name="theme-color" content="#0a0f0a">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page">
   <nav class="nav">
-    <a href="index.html#about">About</a>
-    <a href="index.html#bragi">Bragi</a>
-    <a href="index.html#drills">Drills</a>
-    <a href="index.html#giftmas">Giftmas</a>
-    <a href="#terms">Terms</a>
-    <a href="#privacy">Privacy</a>
-    <a href="#contact">Contact</a>
+    <a class="brand" href="index.html" aria-label="Habrman Ventures AB, home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-name">Habrman Ventures</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#apps">Apps</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   <main>
@@ -65,10 +68,19 @@
     </section>
   </main>
 
-  <footer id="contact">
-    <h2>Contact</h2>
-    <p>Habrman Ventures AB</p>
-    <p><a class="contact-email" href="mailto:info@habrman.se">info@habrman.se</a></p>
+  <footer class="footer" id="contact">
+    <div class="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Say hello.</h2>
+      <a class="contact-email" href="mailto:info@habrman.se">info@habrman.se</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© Habrman Ventures AB · Linköping, Sweden</p>
+      <p class="footer-links">
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
